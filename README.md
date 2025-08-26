@@ -1,15 +1,15 @@
-<b>YTDL Terminal</b>
+<b>YTDL Auto Installer</b>
 <br>
 A lightweight shell script that automates the setup of essential tools and dependencies for YouTube downloading, streaming, and video management. Designed to save time and eliminate repetitive manual installs — just run and go.
 <br>
 <br>
 1. In Termux/Terminal, just run: <BR>
 ```
-curl -L -o ytsetup.sh https://raw.githubusercontent.com/khuahn/shellScript/main/ytsetup.sh && chmod +x ytsetup.sh && ./ytsetup.sh
+curl -L -o ytsetup.sh https://raw.githubusercontent.com/khuahn/YTDLAutoIns/main/ytsetup.sh && chmod +x ytsetup.sh && ./ytsetup.sh
 ```
 or with wget:
 ```
-wget -O ytsetup.sh https://raw.githubusercontent.com/khuahn/shellScript/main/ytsetup.sh && chmod +x ytsetup.sh && ./ytsetup.sh
+wget -O ytsetup.sh https://raw.githubusercontent.com/khuahn/YTDLAutoIns/main/ytsetup.sh && chmod +x ytsetup.sh && ./ytsetup.sh
 ```
 2. Make sure terminal has access to storage:
 ```
