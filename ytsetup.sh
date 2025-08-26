@@ -13,13 +13,11 @@ pip install yt-dlp
 if ! grep -q "alias ytv=" ~/.bashrc; then
     cat << 'EOF' >> ~/.bashrc
 
-# YouTube Video Downloader (720p MP4)
-alias ytv='yt-dlp -f "bestvideo[height<=720][ext=mp4]+bestaudio[ext=m4a]/best[height<=720][ext=mp4]" \
-  --merge-output-format mp4 -o "~/Downloads/%(title)s.%(ext)s"'
+# YT Video Downloader
+alias ytv='yt-dlp -o "~/storage/shared/Download/%(title)s.%(ext)s"'
 
-# YouTube Audio Downloader (MP3)
-alias yta='yt-dlp -f bestaudio --extract-audio --audio-format mp3 \
-  -o "~/Downloads/%(title)s.%(ext)s"'
+# YT Audio Downloader
+alias yta='yt-dlp -x --audio-format mp3 -o "~/storage/shared/Download/%(title)s.%(ext)s"'
 
 EOF
 fi
