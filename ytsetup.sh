@@ -15,11 +15,11 @@ if ! grep -q "alias ytv=" ~/.bashrc; then
 
 # YouTube Video Downloader (720p MP4)
 alias ytv='yt-dlp -f "bestvideo[height<=720][ext=mp4]+bestaudio[ext=m4a]/best[height<=720][ext=mp4]" \
-  --merge-output-format mp4 -o "%(title)s.%(ext)s"'
+  --merge-output-format mp4 -o "~/Downloads/%(title)s.%(ext)s"'
 
 # YouTube Audio Downloader (MP3)
 alias yta='yt-dlp -f bestaudio --extract-audio --audio-format mp3 \
-  -o "%(title)s.%(ext)s"'
+  -o "~/Downloads/%(title)s.%(ext)s"'
 
 EOF
 fi
