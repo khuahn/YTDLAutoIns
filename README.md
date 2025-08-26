@@ -3,11 +3,24 @@
 A lightweight shell script that automates the setup of essential tools and dependencies for YouTube downloading, streaming, and video management. Designed to save time and eliminate repetitive manual installs — just run and go.
 <br>
 <br>
-In Termux/Terminal, just run: <BR>
+1. In Termux/Terminal, just run: <BR>
 ```
 curl -L -o ytsetup.sh https://raw.githubusercontent.com/khuahn/shellScript/main/ytsetup.sh && chmod +x ytsetup.sh && ./ytsetup.sh
 ```
 or with wget:
 ```
 wget -O ytsetup.sh https://raw.githubusercontent.com/khuahn/shellScript/main/ytsetup.sh && chmod +x ytsetup.sh && ./ytsetup.sh
+```
+2. Make sure terminal has access to storage:
+```
+termux-setup-storage
+ls ~/storage/shared/
+```
+3. Copy Youtube link and use format below:
+```
+ytv https://m.youtube.com/watch?v=-RZUJVZ8rYs
+```
+or MP3
+```
+https://m.youtube.com/watch?v=-RZUJVZ8rYs
 ```
