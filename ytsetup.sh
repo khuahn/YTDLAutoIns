@@ -3,8 +3,8 @@
 # Jac's YouTube Downloader Setup Script 🚀
 # =======================================
 
-# Update & install dependencies
-pkg update -y && pkg upgrade -y
+# Update & install dependencies, handling config prompts automatically
+pkg update --assume-yes && pkg upgrade --assume-yes
 pkg install -y python ffmpeg
 pip install --upgrade pip
 pip install yt-dlp
