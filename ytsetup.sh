@@ -14,7 +14,7 @@ if ! grep -q "alias ytv=" ~/.bashrc; then
     cat << 'EOF' >> ~/.bashrc
 
 # YT Video Downloader
-alias ytv='yt-dlp -o "~/storage/shared/Download/%(title)s.%(ext)s"'
+alias ytv='yt-dlp -f "bestvideo[height<=720]+bestaudio/best[height<=720]" --recode-video mp4 -o "~/storage/shared/Download/%(title)s.%(ext)s"'
 
 # YT Audio Downloader
 alias yta='yt-dlp -x --audio-format mp3 -o "~/storage/shared/Download/%(title)s.%(ext)s"'
