@@ -3,9 +3,8 @@
 # Jac's YouTube Downloader Setup Script 🚀
 # =======================================
 
-# Update & install dependencies, handling ALL prompts automatically
-pkg update
-yes n | pkg upgrade
+# Update & install dependencies, handling all prompts automatically
+DEBIAN_FRONTEND=noninteractive pkg update -y && DEBIAN_FRONTEND=noninteractive pkg upgrade -y -o Dpkg::Options::="--force-confdef"
 
 # Install core dependencies
 pkg install -y python ffmpeg
