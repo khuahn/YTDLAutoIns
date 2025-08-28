@@ -3,8 +3,10 @@
 # Jac's YouTube Downloader Setup Script 🚀
 # =======================================
 
-# Update & install dependencies, always keeping your current configuration files
-APT_LISTCHANGES_FRONTEND=none pkg update -y && APT_LISTCHANGES_FRONTEND=none pkg upgrade -y
+# Update & install dependencies, forcing the default option for config files
+pkg update -y && pkg upgrade -y -o Dpkg::Options::="--force-confdef"
+
+# Install core dependencies
 pkg install -y python ffmpeg
 pip install --upgrade pip
 pip install yt-dlp
