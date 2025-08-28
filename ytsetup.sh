@@ -3,8 +3,8 @@
 # Jac's YouTube Downloader Setup Script 🚀
 # =======================================
 
-# Update & install dependencies, handling ALL prompts automatically
-DEBIAN_FRONTEND=noninteractive pkg update && DEBIAN_FRONTEND=noninteractive pkg upgrade -y
+# Update & install dependencies, skipping ALL prompts
+DEBIAN_FRONTEND=noninteractive pkg update -y && DEBIAN_FRONTEND=noninteractive pkg upgrade -y
 pkg install -y python ffmpeg
 pip install --upgrade pip
 pip install yt-dlp
