@@ -1,4 +1,4 @@
-<b>YTDL Auto Installer</b>
+<b>YTDL Auto Installer for Terminal/Termux Android and Linux Distributions</b>
 <br>
 A lightweight shell script that automates setup of essential tools and dependencies for YouTube downloading, streaming, and video management. Designed to save time and eliminate repetitive manual installs — just run it on terminal/termux and you're good to go.
 <br>
